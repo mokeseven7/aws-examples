@@ -7,7 +7,13 @@ AWS gave us cloudformation. Many others have contributed ideas like Micro Servic
 
 ```
 
-An AWS construct that can be used to easily create reproducable Docker Images and ship them to ECR using local Dockerfiles. The construct is optimized for PHP images. The infrastructure code has 100% test coverage, automations for testing, and features a unique approach to using codebuild and step functions. 
+An AWS construct that can be used to easily create reproducable Docker Images and ship them to ECR using local Dockerfiles.   
+
+The construct is optimized for PHP images. 
+
+The CDK/Infra code has 100% test coverage, automations for testing, and npm publishing. 
+
+It also features a unique approach to deployment using codebuild and step functions. 
 
 ```
 > [See Code](https://github.com/mokeseven7/phpbuilder) | [See NPM Package](https://www.npmjs.com/package/@mikemcgrath/phpbuilder) | [See Example Implentation](https://github.com/mokeseven7/phpbuilder-example)
@@ -15,9 +21,13 @@ An AWS construct that can be used to easily create reproducable Docker Images an
 
 ```
 
-IAAC approach to shipping a container to AWS fargate. Including programtically making the github -> codebuild oauth connection to enable rebuilding of images on pushes to master. 
+IAAC approach to shipping a container to AWS fargate. 
 
-Includes incremental rollouts using health checks. If newly pushed images fail health checks, they are rolled back in ecr, and the current versions running in production are "re-tagged" as 'latest'
+Including programtically making the github -> codebuild oauth connection to enable rebuilding of images on pushes to master. 
+
+Includes incremental rollouts using health checks. 
+
+If newly pushed images fail health checks, they are rolled back in ecr, and the current versions running in production are "re-tagged" as 'latest'
 
 
 ```
@@ -26,7 +36,9 @@ Includes incremental rollouts using health checks. If newly pushed images fail h
  
 ```
 
-See another example of how to ship PHP code to lambda, back in the dark ages when you had to use "layers", and AWS did not provide the lambda runtime as a simple dockerfile. 
+See another example of how to ship PHP code to lambda. 
+
+This was back in the dark ages when you had to use "layers", and AWS did not provide the lambda runtime as a simple dockerfile. 
 
 
 ```
@@ -37,18 +49,14 @@ See another example of how to ship PHP code to lambda, back in the dark ages whe
    
 ```
 
-A IAAC approach to creating a completely serverless wordpress instance, using Fargate, Aurora, and EFS. Would I reccomend wordpress? Probably not, but if you're going to anyway, make it serverless!
+A IAAC approach to creating a completely serverless wordpress instance.
+
+It uses Fargate, Aurora, and EFS. 
+
+Would I reccomend wordpress? Probably not. 
+
+Bbut if you're going to anyway, make it serverless!
 
 ```
 > [See Code](https://github.com/mokeseven7/cdk-wordpress)
 
-
-
-
-```
-
-That time a company asked me to make an entire subscription service as the coding assessment. 
-
-The code itself is not particularly impressive, but writing a feature complete billing service in 4 hours maybe is? 
-
-```
