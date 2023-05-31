@@ -5,6 +5,7 @@ In my most humble opinion, this is what it looks like to be a full stack dev in 
 AWS gave us cloudformation. Many others have contributed ideas like Micro Service and Event Driven arcitectures. These things are more than just buzzwords, they are the building blocks (esp. IAAC) of what becoming "Agile" truley looks like in practice. 
 
 
+
 ```
 
 An AWS construct that can be used to easily create reproducable Docker Images and ship them to ECR using local Dockerfiles.   
@@ -17,6 +18,16 @@ It also features a unique approach to deployment using codebuild and step functi
 
 ```
 > [See Code](https://github.com/mokeseven7/phpbuilder) | [See NPM Package](https://www.npmjs.com/package/@mikemcgrath/phpbuilder) | [See Example Implentation](https://github.com/mokeseven7/phpbuilder-example)
+
+```
+
+An example implementation using the above construct to build a php iamge from the lambda/provided base image, 
+which is used to crate a custom JWT authorizer lambda function for api gateway using okta. 
+
+
+```
+> [See Code](https://github.com/mokeseven7/lambda-jwt-authorizer)
+
 
 
 ```
