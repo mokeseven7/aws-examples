@@ -25,7 +25,7 @@ An example implementation using the above construct to build a php iamge.
 
 This iamge uses the lambda/provided as its base, builds php 8, makes php executable in lambda. 
 
-This image is used to crate a custom JWT authorizer lambda function for api gateway using okta. 
+This image is used to create a custom JWT authorizer lambda function for api gateway using okta. 
 
 
 ```
