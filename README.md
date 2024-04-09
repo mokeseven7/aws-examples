@@ -1,9 +1,8 @@
 # AWS, Serverless, And Automation
 
-In my most humble opinion, this is what it looks like to be a full stack dev in 2023. One should be able to create and own the infra-structure they deploy their application code too. All Infra should be expressed as code with almost zero exceptions, and automations should be priortized at every level. Docker solved the "works on my machine" problem over 10 years ago.   
+**"Always On" is @deprecated**
 
-AWS gave us cloudformation. Many others have contributed ideas like Micro Service and Event Driven arcitectures. These things are more than just buzzwords, they are the building blocks (esp. IAAC) of what becoming "Agile" truley looks like in practice. 
-
+The cost of well designed infrastructure mirrors that of circadian rhythm.  
 
 
 ```
